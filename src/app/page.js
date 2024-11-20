@@ -1,5 +1,8 @@
 import Image from "next/image";
-import bg from "../../public/background/central-park.jpeg"
+import bg from "../../public/background/sf-cyber-punk.png"
+import RenderModel from "@/components/RenderModel";
+import Wizard from "@/components/models/wizard";
+import CyberPunk from "@/components/models/cyber-punk";
 
 export default function Home() {
   return (
@@ -11,7 +14,14 @@ export default function Home() {
         fill
         alt="background-image"
         sizes="100vw"
-      />   
+      />
+      <div className="w-full h-screen">
+        {/* {Navigation and 3d model component} */}
+        <RenderModel>
+          {/* <Wizard /> */}
+          <CyberPunk />
+        </RenderModel>
+      </div>
     </main>
   );
 }
