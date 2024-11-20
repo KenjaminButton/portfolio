@@ -1,5 +1,5 @@
 import Image from "next/image";
-import bg from "../../public/background/home-background.png"
+import bg from "../../public/background/central-park.jpeg"
 
 export default function Home() {
   return (

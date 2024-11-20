@@ -16,6 +16,8 @@ Home Page Background
 
 - Prompt: "An enchanted forest at night, under a starlit sky. The scene is dark by mystical glows from luminescent flowers, exotic mushrooms, and arcane symbols on ancient trees. The atmosphere is serene, with a magical aura conveyed through ethereal particles and soft glimmers of light floating in the air. The color scheme should focus on dark tones with highlights in mild yellow and gold, creating a magical and inviting scene that blends the beauty of an astral night with the mystery of a magical forest."
 
+- Prompt: Prompt: "A lively enchanted forest during the day, filled with sunlight filtering through lush, green leaves. The scene is bursting with colorful flowers, vibrant wildflowers in various hues, and oversized, whimsical mushrooms. Playful woodland creatures, such as squirrels and colorful birds, dart among the branches and flowers. The atmosphere is cheerful and energetic, with sparkling fairy lights dancing in the air and a gentle breeze creating a soft rustle. The color scheme should be bright and lively, focusing on vivid greens, warm yellows, radiant pinks, and rich blues, conveying a magical yet joyful ambiance that celebrates the beauty and wonder of a sunlit forest."
+
 - Seed: 656140970
 
 
