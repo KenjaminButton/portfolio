@@ -5,7 +5,7 @@ import { Canvas } from '@react-three/fiber'
 import clsx from 'clsx'
 import React, { Suspense } from 'react'
 
-const RenderModal = ({children, className}) => {
+const RenderModel = ({children, className}) => {
 
 
 
@@ -21,5 +21,5 @@ const RenderModal = ({children, className}) => {
   )
 }
 
-export default RenderModal
+export default RenderModel
 
