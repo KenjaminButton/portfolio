@@ -10,14 +10,21 @@ Title: Cyberpunk character
 
 import React, { useRef } from 'react'
 import { useGLTF, useAnimations } from '@react-three/drei'
+import { useFrame } from '@react-three/fiber'
 
 export default function CyberPunk(props) {
-  const group = useRef()
+  const modelRef = useRef()
   const { nodes, materials, animations } = useGLTF('/models/cyberpunk_character.glb')
-  const { actions } = useAnimations(animations, group)
+  const { actions } = useAnimations(animations, modelRef)
+
+  useFrame((state, delta, xrFrame) => {
+    // console.log(state.clock)
+    modelRef.current.position.y = -2.5 + Math.sin(state.clock.elapsedTime) * 0.15
+  })
+
   return (
     <group 
-      ref={group} 
+      ref={modelRef} 
       {...props} 
       dispose={null}
       position ={[0, -2.5, 0]}

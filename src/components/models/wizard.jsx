@@ -9,9 +9,17 @@ import { useGLTF } from '@react-three/drei'
 
 export default function Wizard(props) {
   const { nodes, materials } = useGLTF('/models/wizard-transformed.glb')
+  
+  const modelRef = useRef()
+
+  useFrame((state, delta, xrFrame) => {
+    
+  })
+
   return (
     <group 
       {...props} 
+      ref={modelRef}
       dispose={null}
       position ={[0, -1.5, 0]}
       scale={[0.06, 0.06, 0.06]}
