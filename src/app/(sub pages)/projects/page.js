@@ -1,7 +1,8 @@
 import Image from "next/image";
-import bg from "../../../public/background/projects-background-2.png"
+// import bg from "../../../public/background/projects-background-2.png"
+import bg from "../../../../public/background/projects-background-2.png"
 import ProjectList from "@/components/projects";
-import { projectsData } from "../data";
+import { projectsData } from "../../data";
 import CyberPunk from "@/components/models/cyber-punk";
 import RenderModel from "@/components/RenderModel";
 import BaseballBat from "@/components/models/baseball-bat";
