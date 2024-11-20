@@ -17,6 +17,7 @@ export default function CyberPunk(props) {
   const { nodes, materials, animations } = useGLTF('/models/cyberpunk_character.glb')
   const { actions } = useAnimations(animations, modelRef)
 
+  // Allows me to run code on any frame of the animation
   useFrame((state, delta, xrFrame) => {
     // console.log(state.clock)
     modelRef.current.position.y = -2.5 + Math.sin(state.clock.elapsedTime) * 0.15

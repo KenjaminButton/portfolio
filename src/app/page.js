@@ -3,6 +3,7 @@ import bg from "../../public/background/sf-cyber-punk.png"
 import RenderModel from "@/components/RenderModel";
 import Wizard from "@/components/models/wizard";
 import CyberPunk from "@/components/models/cyber-punk";
+import Navigation from "@/components/navigation";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       />
       <div className="w-full h-screen">
         {/* {Navigation and 3d model component} */}
+        <Navigation />
         <RenderModel>
           {/* <Wizard /> */}
           <CyberPunk />
