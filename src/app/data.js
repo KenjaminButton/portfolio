@@ -37,6 +37,41 @@ export const projectsData = [
     description: "Plan and track expenses",
     date: "2022-09-10",
     demoLink: "https://budgetplanner.example.com",
+  },
+  {
+    id: 4,
+    name: "HealthBeat",
+    description: "Monitor heart rate zones",
+    date: "2022-05-30",
+    demoLink: "https://healthbeat.example.com",
+  },
+  {
+    id: 5,
+    name: "RecipeFinder",
+    description: "Discover new recipes",
+    date: "2022-07-12",
+    demoLink: "https://recipefinder.example.com",
+  },
+  {
+    id: 6,
+    name: "JourneyLogger",
+    description: "Log your travels",
+    date: "2022-10-01",
+    demoLink: "https://journeylogger.example.com",
+  },
+  {
+    id: 7,
+    name: "StudyBuddy",
+    description: "Collaborative learning platform",
+    date: "2022-04-18",
+    demoLink: "https://studybuddy.example.com",
+  },
+  {
+    id: 8,
+    name: "TechTalk",
+    description: "Tech news aggregator",
+    date: "2022-11-05",
+    demoLink: "https://techtalk.example.com",
   }
 ];
 

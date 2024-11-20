@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <div >
         <Image
-          className="-z-50 fixed w-full h-full object-cover object-center opacity-50"
+          className="-z-50 top-0 left-0 fixed w-full h-full object-cover object-center opacity-50"
           priority
           src={bg}
           fill
@@ -21,7 +21,7 @@ export default function Home() {
         />
         <div className="relative z-10">
           <ProjectList projects={projectsData} />
-          <div className="flex items-center justify-start fixed top-20 left-0 h-screen">
+          <div className="flex items-center justify-start fixed top-20 -left-24 h-screen">
             <RenderModel>
               {/* <Wizard /> */}
               {/* <CyberPunk /> */}
