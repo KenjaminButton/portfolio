@@ -55,28 +55,27 @@ const AboutDetails = () => {
             <sub className="font-semibold text-base">years of experience</sub>
           </p>
         </ItemLayout>
-
+        {/* Github Stats */}
         <ItemLayout
-          className={"col-span-full sm:col-span-6 md:col-span-4 !p-0"}
+          className={"col-span-full sm:col-span-12 md:col-span-8 !p-0"}
         >
           <img
             className="w-full h-auto"
-            src="https://github-readme-stats.vercel.app/api?username=kenjaminbutton&theme=gruvbox_light"
+            src="https://github-readme-stats.vercel.app/api?username=kenjaminbutton&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon=FEFE5B&text_bold=false"
             alt="KenjaminButton"
             loading="lazy"
-            // src={`${process.env.NEXT_PUBLIC_GITHUB_STATS_URL}/api/top-langs?username=KenjaminButton&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false`}
           />
         </ItemLayout>
-
-        <ItemLayout className={"col-span-full md:col-span-8 !p-0"}>
+        {/* Github Most Used Languages */}
+        <ItemLayout className={"col-span-full md:col-span-4 !p-0"}>
           <img
             className="w-full h-auto"
-            src={`${process.env.NEXT_PUBLIC_GITHUB_STATS_URL}/api?username=codebucks27&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false`}
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=kenjaminbutton"
             alt="KenjaminButton"
             loading="lazy"
           />
         </ItemLayout>
-
+        {/* Skills Icon */}
         <ItemLayout className={"col-span-full"}>
           <img
             className="w-full h-auto"
@@ -85,11 +84,11 @@ const AboutDetails = () => {
             loading="lazy"
           />
         </ItemLayout>
-
+        {/* Github Streaks Page */}
         <ItemLayout className={"col-span-full md:col-span-6 !p-0"}>
           <img
             className="w-full h-auto"
-            src={`${process.env.NEXT_PUBLIC_GITHUB_STREAK_STATS_URL}?user=codebucks27&theme=dark&hide_border=true&type=svg&background=EB545400&ring=FEFE5B&currStreakLabel=FEFE5B`}
+            src="https://github-readme-streak-stats.herokuapp.com?user=KenjaminButton&theme=dark&hide_border=true&type=png&border=EB5454&ring=FEFE5B&currStreakLabel=FEFE5B"
             alt="KenjaminButton"
             loading="lazy"
           />
