@@ -11,7 +11,7 @@ const AboutDetails = () => {
             " col-span-full lg:col-span-8 row-span-2 flex-col items-start"
           }
         >
-          <h2 className="  text-xl md:text-2xl text-left w-full capitalize">
+          <h2 className="text-xl md:text-2xl text-left w-full capitalize">
             Full Stack Engineer
           </h2>
           <p className="font-light  text-xs sm:text-sm md:text-base   ">
@@ -40,7 +40,7 @@ const AboutDetails = () => {
         </ItemLayout>
 
         <ItemLayout
-          className={" col-span-full xs:col-span-6 lg:col-span-4 text-accent"}
+          className={"col-span-full xs:col-span-6 lg:col-span-4 text-accent"}
         >
           <p className="font-semibold w-full text-left text-2xl sm:text-5xl">
             50+ <sub className="font-semibold text-base">clients</sub>
