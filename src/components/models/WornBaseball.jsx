@@ -30,7 +30,7 @@ export default function WornBaseball(props) {
   }
 
   return (
-    <group ref={modelRef} {...props} dispose={null} scale={[1.8, 1.8, 1.8]}>
+    <group ref={modelRef} {...props} dispose={null} position={[0, 1.5, 0]} scale={[1.8, 1.8, 1.8]}>
       <mesh
         castShadow
         receiveShadow
