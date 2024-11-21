@@ -93,16 +93,16 @@ const AboutDetails = () => {
             loading="lazy"
           />
         </ItemLayout>
-
-        <ItemLayout className={"col-span-full md:col-span-6 !p-0"}>
+        {/* Github Current Repo */}
+        <ItemLayout className={"col-span-full md:col-span-6 flex !p-0"}>
           <Link
             href="https://github.com/codebucks27/Nextjs-contentlayer-blog"
             target="_blank"
             className="w-full"
           >
             <img
-              className="w-full h-auto"
-              src={`${process.env.NEXT_PUBLIC_GITHUB_STATS_URL}/api/pin/?username=codebucks27&repo=Nextjs-contentlayer-blog&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false&description_lines_count=2`}
+              className="w-full h-full"
+              src="https://github-readme-stats.vercel.app/api/pin/?username=kenjaminbutton&repo=NextJS-Recipes-App&theme=transparent&hide_border=true*title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false&description_lines_count=2"
               alt="KenjaminButton"
               loading="lazy"
             />
