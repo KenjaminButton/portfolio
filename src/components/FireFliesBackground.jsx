@@ -6,6 +6,7 @@ const createFirefly = () => ({
   top: `${Math.random() * 100}%`,
   left: `${Math.random() * 100}%`,
   animationDuration: `${Math.random() * 5 + 5}s`,
+  color: '#FFFFFF'
 });
 
 const FireFliesBackground = () => {
@@ -21,7 +22,6 @@ const FireFliesBackground = () => {
       
     };
 
-    // const interval = setInterval(addFireflyPeriodically, 1000);
     const interval = setInterval(addFireflyPeriodically, 2500);
 
     return () => clearInterval(interval);
@@ -33,8 +33,7 @@ const FireFliesBackground = () => {
         return (
           <div
             key={firefly.id}
-            // className="absolute rounded-full w-[10px] h-[10px] bg-firefly-radial"
-            className="absolute rounded-full bg-accent w-[10px] h-[10px] bg-firefly-radial"
+            className="absolute rounded-full bg-accent w-[5px] h-[5px] bg-firefly-radial bg-white"
             style={{
               top: firefly.top,
               left: firefly.left,
