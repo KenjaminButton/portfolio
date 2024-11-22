@@ -15,27 +15,22 @@ const AboutDetails = () => {
             Full Stack Engineer
           </h2>
           <p className="font-light  text-xs sm:text-sm md:text-base   ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-            molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-            numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-            optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
-            obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-            nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
-            tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
-            quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos
-            sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam
-            recusandae alias error harum maxime adipisci amet laborum. Perspiciatis
-            minima nesciunt dolorem! Officiis iure rerum voluptates a cumque velit
-            quibusdam sed amet tempora. Sit laborum ab, eius fugit doloribus tenetur
-            fugiat, temporibus enim commodi iusto libero magni deleniti quod quam
-            consequuntur! Commodi minima excepturi repudiandae velit hic maxime
-            doloremque. Quaerat provident commodi consectetur veniam similique ad
-            earum omnis ipsum saepe, voluptas, hic voluptates pariatur est explicabo
-            fugiat, dolorum eligendi quam cupiditate excepturi mollitia maiores labore
-            suscipit quas? Nulla, placeat. Voluptatem quaerat non architecto ab laudantium
-            modi minima sunt esse temporibus sint culpa, recusandae aliquam numquam
-            totam ratione voluptas quod exercitationem fuga. Possimus quis earum veniam
-            quasi aliquam eligendi, placeat qui corporis!
+            Hello! I'm Kenneth P. Chang, a full-stack software engineer with over a decade of experience navigating the ever-evolving world of technology. My journey began at the University of California, Santa Barbara, where I earned my Bachelor of Arts in Political Science and a minor in Chemistry, but my passion for problem-solving and creativity led me to dive headfirst into the tech realm.
+          </p>
+          <p className="font-light  text-xs sm:text-sm md:text-base   ">
+            As a Lead Instructor at General Assembly in both San Francisco and New York, I have had the incredible opportunity to mentor aspiring developers, guiding them through the complexities of coding with enthusiasm. Leading over five cohorts of budding tech talent, I’ve not only shared my expertise in languages and frameworks like JavaScript, Python, and React but have also fostered a supportive and engaging learning environment. With a commitment to excellence, our team consistently achieved a remarkable NPS score of over 95—proof that we were igniting passion for software development!
+          </p>
+          <p className="font-light  text-xs sm:text-sm md:text-base   ">
+            Previously, I honed my skills at General Resources Company in Taiwan and San Jose, where I modernized government contract bidding processes and leveraged machine learning to boost efficiency by 30%. My technical prowess also led to crafting a Learning Management System that tripled client revenue while enhancing user satisfaction and engagement.
+          </p>
+          <p className="font-light  text-xs sm:text-sm md:text-base   ">
+            Having mastered a myriad of technologies—from cloud services like AWS to robust back-end systems with Node and Express—I'm deeply passionate about creating impactful software solutions that not only meet business needs but also thrill users.
+          </p>
+          <p className="font-light  text-xs sm:text-sm md:text-base   ">
+            When I'm not coding or empowering others through education, you can find me exploring the vibrant city of San Jose, where innovation meets culture, or diving into the latest tech trends on my GitHub.
+          </p>
+          <p className="font-light  text-xs sm:text-sm md:text-base   ">
+            Let’s connect and shape the future of technology together!
           </p>
         </ItemLayout>
 
@@ -76,10 +71,11 @@ const AboutDetails = () => {
           />
         </ItemLayout>
         {/* Skills Icon */}
+        {/*  */}
         <ItemLayout className={"col-span-full"}>
           <img
             className="w-full h-auto"
-            src={`https://skillicons.dev/icons?i=appwrite,aws,babel,bootstrap,cloudflare,css,d3,docker,figma,firebase,gatsby,git,github,graphql,html,ipfs,js,jquery,kubernetes,linux,mongodb,mysql,netlify,nextjs,nodejs,npm,postgres,react,redux,replit,sass,supabase,tailwind,threejs,vercel,vite,vscode,yarn`}
+            src={`https://skillicons.dev/icons?i=aws,anaconda,apple,azure,babel,bitbucket,bash,bootstrap,cpp,cloudflare,codepen,coffeescript,css,devto,discord,django,docker,dynamodb,electron,emacs,express,fastapi,figma,firebase,flask,gatsby,gcp,git,github,gmail,gulp,heroku,html,htmx,instagram,java,js,jest,jquery,kubernetes,linkedin,linux,materialui,mongodb,mysql,netlify,nextjs,nginx,nodejs,npm,notion,php,postgres,postman,prisma,pycharm,py,pytorch,raspberrypi,react,redux,replit,sass,sqlite,stackoverflow,sublime,supabase,selenium,svg,swift,tailwind,tensorflow,terraform,threejs,ts,ubuntu,vercel,vim,visualstudio,vite,vscode,webpack,webstorm,windows,wordpress,yarn`}
             alt="KenjaminButton"
             loading="lazy"
           />
