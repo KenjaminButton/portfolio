@@ -88,7 +88,7 @@ export const BtnList = [
   },
   {
     label: "LinkedIn",
-    link: "https://www.linkedin.com/in/codebucks",
+    link: "https://www.linkedin.com/in/kenneth-chang-94569a142",
     icon: "linkedin",
     newTab: true,
   },

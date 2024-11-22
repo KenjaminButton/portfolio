@@ -16,7 +16,6 @@ export default function Home() {
         sizes="100vw"
       />
       <div className="w-full h-screen">
-        {/* {Navigation and 3d model component} */}
         <Navigation />
         <RenderModel>
           <CyberPunk />
