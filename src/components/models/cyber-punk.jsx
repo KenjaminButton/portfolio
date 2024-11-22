@@ -19,8 +19,7 @@ export default function CyberPunk(props) {
 
   // Allows me to run code on any frame of the animation
   useFrame((state, delta, xrFrame) => {
-    // console.log(state.clock)
-    modelRef.current.position.y = -2.5 + Math.sin(state.clock.elapsedTime) * 0.15
+    modelRef.current.position.y = -1.5 + Math.sin(state.clock.elapsedTime) * 0.15
   })
 
   return (
@@ -28,8 +27,8 @@ export default function CyberPunk(props) {
       ref={modelRef} 
       {...props} 
       dispose={null}
-      position ={[0, -2.5, 0]}
-      scale={[0.86, 0.86, 0.86]}
+      position ={[0, -1.5, 0]}
+      scale={[0.90, 0.90, 0.90]}
       // rotation={[0.25, 0, 0]}
     >
       <group name="Sketchfab_Scene">
