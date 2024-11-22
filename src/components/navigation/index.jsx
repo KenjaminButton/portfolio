@@ -73,7 +73,7 @@ const Navigation = () => {
                         x={0}
                         y={0}
                         {...btn}
-                        labelDirection="left"
+                        labelDirection="right"
                       />
                     );
                   }
