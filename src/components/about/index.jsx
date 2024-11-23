@@ -90,7 +90,10 @@ const AboutDetails = () => {
           />
         </ItemLayout>
         {/* Github Current Repo */}
-        <ItemLayout className={"col-span-full md:col-span-6 flex !p-0"}>
+        {/* <ItemLayout className={"col-span-full md:col-span-6 flex !p-0"}> */}
+        <ItemLayout 
+          className={"col-span-full md:col-span-6 flex !p-3 "}
+        >
           <Link
             href="https://github.com/codebucks27/Nextjs-contentlayer-blog"
             target="_blank"

@@ -21,14 +21,14 @@ export const projectsData = [
     id: 1,
     name: "EcoTracker",
     description: "Track your carbon footprint",
-    date: "2022-08-15",
+    date: "2024-12-15",
     demoLink: "https://ecotracker.example.com",
   },
   {
     id: 2,
-    name: "ArtGallery Online",
-    description: "Digital art showcase platform",
-    date: "2022-06-20",
+    name: "Fujifilm X-T30 Recipes",
+    description: "Film Simulation Recipes",
+    date: "2024-11-24",
     demoLink: "https://artgalleryonline.example.com",
   },
   {

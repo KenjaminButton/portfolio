@@ -23,14 +23,10 @@ export default function Contact() {
             Contact KenjaminButton A.K.A Kenneth P. Chang
           </h1>
           <p className="text-center font-light text-sm xs:text-base">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-            molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-            numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-            optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
-            obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-            nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
-            tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
-            quia. Quo neque error repudiandae fuga?
+          Thank you for visiting my portfolio! I’m always eager to connect with fellow developers, potential collaborators, and clients. If you have any questions, feedback, or opportunities, please don’t hesitate to reach out. Whether you're looking to discuss a project, need assistance, or simply want to say hello, I’d love to hear from you!
+          </p>
+          <p className="text-center font-light text-sm xs:text-base">
+          You can fill out the contact form below or connect with me through my social media links. Let’s create something great together!
           </p>
         </div>
         <Form />
