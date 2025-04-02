@@ -1,0 +1,40 @@
+---
+import { getAndGroupUniqueTags } from "../../lib/utils";
+import { PROFILE } from "../../content/profileData";
+import { SkillBadge } from '../ui/SkillBadge';
+import { SKILL_ICONS } from '../../lib/skillIcons';
+
+const tagsMap = await getAndGroupUniqueTags();
+
+const skills = PROFILE.skills;
+---
+
+<div class="flex flex-col gap-2 animate-appear">
+  <p class="text-sm font-light mb-1">
+    {PROFILE.headLine}
+  </p>
+
+  <p class="text-md mb-1 font-medium">
+    {PROFILE.headLine2}
+  </p>
+
+  <hr/>
+
+  <p class="text-sm font-light">
+    My toolkit includes:
+  </p>
+  <div class="flex flex-wrap gap-2 mt-2">
+    {
+      skills.map((skill) => (
+        <SkillBadge
+          skill={skill}
+          color={SKILL_ICONS[skill]?.color}
+        />
+      ))
+    }
+  </div>
+
+  <p class="text-sm font-light">
+    Passionate about creating impactful solutions, I thrive on learning new technologies and sharing my insights with others.
+  </p>
+</div>

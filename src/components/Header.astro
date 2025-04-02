@@ -1,0 +1,133 @@
+---
+import {buttonVariants} from '../components/ui/button'
+import {ModeToggle} from '../components/react/ThemeToggle'
+import {PROFILE} from "../content/profileData";
+
+const SITE = PROFILE.site
+---
+
+<header
+  class="sticky top-0 z-50 w-full border-b bg-background"
+>
+  <div
+    class="container flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0"
+  >
+    <div class="flex gap-6 md:gap-10">
+      <a href="/" class="flex items-center space-x-2">
+        <span class="inline-block font-bold">{PROFILE.name}</span>
+      </a>
+    </div>
+    
+    <div class="flex flex-1 items-center justify-end space-x-4 md:space-x-0">
+      <nav class="flex items-center space-x-1 md:hidden">
+        <ModeToggle transition:persist client:load/>
+      </nav>
+
+      <button
+        id="hamburger-button"
+        class="md:hidden"
+        aria-label="Toggle menu"
+      >
+        <svg
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </button>
+    </div>
+
+    <nav class="hidden md:flex items-center justify-end space-x-1">
+      <a
+        href="/posts"
+        class={buttonVariants({variant: 'ghost'})}
+        style="color: #0d87a3;"
+      >
+        Blog
+      </a>
+      <a
+        href="/projects"
+        class={buttonVariants({variant: 'ghost'})}
+        style="color: #0d87a3;"
+      >
+        Projects
+      </a>
+      <a
+        href={PROFILE.repo}
+        target="_blank"
+        rel="noreferrer"
+        class={buttonVariants({variant: 'ghost'})}
+        style="color: #0d87a3;"
+      >
+        GitHub
+      </a>
+      <ModeToggle transition:persist client:load/>
+    </nav>
+  </div>
+
+  <nav
+    id="mobile-menu"
+    class="hidden md:hidden fixed top-16 right-0 w-[240px] bg-background p-4"
+  >
+    <a
+      href="/posts"
+      class={buttonVariants({variant: 'ghost'})}
+      style="display: block; margin-bottom: 8px; color: #0d87a3;"
+    >
+      Blog
+    </a>
+    <a
+      href="/projects"
+      class={buttonVariants({variant: 'ghost'})}
+      style="display: block; margin-bottom: 8px; color: #0d87a3;"
+    >
+      Projects
+    </a>
+    <a
+      href={PROFILE.repo}
+      target="_blank"
+      rel="noreferrer"
+      class={buttonVariants({variant: 'ghost'})}
+      style="display: block; color: #0d87a3;"
+    >
+      GitHub
+    </a>
+  </nav>
+</header>
+
+<script is:inline client:load>
+  // Hamburger button
+  const hamburgerButton = document.getElementById('hamburger-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+  
+  if (hamburgerButton && mobileMenu) {
+    console.log("Script loaded. Button and menu found.");
+    hamburgerButton.addEventListener('click', () => {
+      console.log("HAMBURGER MENU CLICKED!");
+      mobileMenu.classList.toggle('hidden');
+      mobileMenu.classList.toggle('block');
+    });
+  } else {
+    console.log("Script loaded but button or menu not found");
+  }
+
+  // Theme toggle
+  document.addEventListener('astro:after-swap', function () {
+    if (localStorage.getItem('theme') === 'dark')
+      document.documentElement.classList.toggle('dark', true)
+  })
+
+  const getThemePreference = () => {
+    return localStorage.getItem('theme')
+  }
+
+  const isDark = getThemePreference() === 'dark'
+  document.documentElement.classList[isDark ? 'add' : 'remove']('dark')
+</script>

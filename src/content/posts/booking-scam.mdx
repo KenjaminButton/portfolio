@@ -1,0 +1,64 @@
+---
+slug: "adding-mcp-to-windsurf-ide"
+title: "How to Add an MCP to Windsurf IDE"
+description: "A step-by-step guide on adding MCP settings to your Windsurf IDE for better functionality."
+startDate: 2025-03-29
+image: 
+  {
+    url: "https://res.cloudinary.com/donfg7m07/image/upload/v1743211092/Screenshot_2025-03-28_at_6.17.26_PM_tbsff2.png",
+    alt: "Windsurf IDE MCP Settings",
+  }
+tags: ["Windsurf", "MCP", "IDE", "BrowserTools", "Codeium", "Codeium Cascade", "Codeium MCP", "BrowserTools MCP"]
+---
+
+[BrowserTools MCP REPOSITORY Link](https://github.com/AgentDeskAI/browser-tools-mcp)
+
+[Codeium Cascade MCP Documentation](https://docs.windsurf.com/windsurf/mcp)
+
+The **BrowserTools MCP** can enable the AI to read your console error messages, allowing it to fix them without the need to copy and paste error messages from the browser developer tools. This has significantly saved me time debugging.
+
+# How to Add an MCP to Windsurf IDE
+
+Enhance your Windsurf IDE experience by following this step-by-step guide to configure your MCP settings.
+
+## Step 1: Open Windsurf IDE
+
+- Launch the **Windsurf IDE** application on your device.
+
+## Step 2: Access Settings
+
+- Click on **Settings** in the top menu.
+
+## Step 3: Navigate to Windsurf Settings
+
+- From the settings dropdown menu, click on **Windsurf Settings**.
+
+![Windsurf Settings](https://res.cloudinary.com/donfg7m07/image/upload/v1743210942/add-server-windsurf_vtjbbd.png)
+
+## Step 4: Add MCP Server
+
+- Locate and click on the **Add Custom Server+** button as shown below.
+
+![Add MCP Server](https://res.cloudinary.com/donfg7m07/image/upload/v1743210942/add-custom-server-windsurf_cuzw6e.png)
+
+## Step 5: Update mcp_config.json
+
+- Open your `mcp_config.json` file and copy and paste the following code into it:
+
+```json
+{
+  "mcpServers": {
+    "browser-tools": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@agentdeskai/browser-tools-mcp@1.0.11"
+      ]
+    }
+  }
+}
+```
+
+## Step 6: Test MCP Functionality
+- Ask Windsurf if it can read your console log error messages. You should receive a response of YES.
+
